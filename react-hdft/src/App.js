@@ -6,11 +6,22 @@ import About from "./pages/about";
 import Services from "./pages/services";
 import Contact from "./pages/contact";
 import SignUp from "./pages/signup";
+import BarChart from "./graph/BarChart";
+import Sample from "./sample";
 
 function App() {
+  const style = {
+    width: "50%",
+    margin: "0 auto",
+    marginTop: 150,
+  };
   return (
     <Router>
       <Navbar />
+      <div style={style}>
+        <Sample />
+      </div>
+      <BarChart />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
