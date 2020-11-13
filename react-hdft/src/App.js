@@ -7,7 +7,8 @@ import Services from "./pages/services";
 import Contact from "./pages/contact";
 import SignUp from "./pages/signup";
 import BarChart from "./graph/BarChart";
-import Sample from "./sample";
+// import Sample from "./sample";
+import { FooterContainer } from "./containers/footer";
 
 function App() {
   const style = {
@@ -18,9 +19,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div style={style}>
+      {/* <div style={style}>
         <Sample />
-      </div>
+      </div> */}
       <BarChart />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contact-us" component={Contact} />
         <Route path="/sign-up" component={SignUp} />
       </Switch>
+      <FooterContainer />
     </Router>
   );
 }
