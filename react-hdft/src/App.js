@@ -12,8 +12,8 @@ import Sample from "./sample";
 function App() {
   const style = {
     width: "50%",
-    margin: "0 auto",
-    marginTop: 150,
+    // margin: "0 auto",
+    marginTop: 50,
   };
   return (
     <Router>

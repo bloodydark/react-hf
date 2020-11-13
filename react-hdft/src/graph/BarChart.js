@@ -17,7 +17,7 @@ const BarChart = () => {
           ],
           datasets: [
             {
-              label: "Trajectory",
+              label: "Your Trajectory",
               data: [12, 19, 3, 5, 10, 50, 5],
               backgroundColor: [
                 "rgba(255, 99, 132, 0.2)",
