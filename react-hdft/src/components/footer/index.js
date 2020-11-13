@@ -1,26 +1,17 @@
 import React from "react";
-import { Container, Wrapper, Row, Column, Link, Title } from "./styles/footer";
+import { FooterParent, FooterWrapper } from "./FooterElements";
 
-export default function Footer({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
-}
-
-Footer.Wrapper = function FooterWrapper({ children, ...restProps }) {
-  return <Wrapper {...restProps}>{children}</Wrapper>;
+const Footer = () => {
+  return (
+    <>
+      <FooterParent>
+        <FooterWrapper>
+          <h1>Footer1</h1>
+          <h1>Footer2</h1>
+        </FooterWrapper>
+      </FooterParent>
+    </>
+  );
 };
 
-Footer.Row = function FooterRow({ children, ...restProps }) {
-  return <Row {...restProps}>{children}</Row>;
-};
-
-Footer.Column = function FooterColumn({ children, ...restProps }) {
-  return <Column {...restProps}>{children}</Column>;
-};
-
-Footer.Link = function FooterLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
-};
-
-Footer.Title = function FooterTitle({ children, ...restProps }) {
-  return <Title {...restProps}>{children}</Title>;
-};
+export default Footer;
