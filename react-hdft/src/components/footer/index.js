@@ -1,13 +1,14 @@
 import React from "react";
 import { FooterParent, FooterWrapper } from "./FooterElements";
+import Icon from "../icons/";
 
 const Footer = () => {
   return (
     <>
       <FooterParent>
         <FooterWrapper>
-          <h1>Footer1</h1>
-          <h1>Footer2</h1>
+          <Icon className="fas fa-heart" />
+          <Icon className="fas fa-bolt" />
         </FooterWrapper>
       </FooterParent>
     </>
